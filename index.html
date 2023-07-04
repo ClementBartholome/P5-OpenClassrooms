@@ -2,8 +2,8 @@
 <html lang="fr">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" />
-    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/style.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,12 +15,39 @@
     <!--Ajout metadescription-->
     <meta
       name="description"
-      content="Découvrez le travail de Nina Carducci, photographe professionnelle basée à Bordeaux. 
-	  Contactez-la dès maintenant pour des séances photo uniques et des souvenirs inoubliables." />
+      content="Nina Carducci, photographe professionnelle disponible sur Bordeaux pour vos shooting photo, retouches et album photos." />
+    <meta name="twitter:card" content="summary" />
+    <!--Twitter meta-->
+    <meta
+      name="twitter:site"
+      content="https://clementbartholome.github.io/P5-OpenClassrooms/" />
+    <meta
+      name="twitter:title"
+      content="Nina Carducci - Photographe Professionnelle Bordeaux" />
+    <meta
+      name="”twitter:description”"
+      content="Photographe professionnelle disponible sur Bordeaux pour vos shooting photo, retouches et album photos." />
+    <meta
+      name="”twitter:image”"
+      content="https://clementbartholome.github.io/P5-OpenClassrooms/assets/images/nina.webp" />
+    <!-- Open Graph meta (Facebook) -->
+    <meta
+      property="og:title"
+      content="Nina Carducci - Photographe Professionnelle Bordeaux" />
+    <meta property="og:type" content="siteweb" />
+    <meta
+      property="og:url"
+      content="https://clementbartholome.github.io/P5-OpenClassrooms/" />
+    <meta
+      property="og:image"
+      content="https://clementbartholome.github.io/P5-OpenClassrooms/assets/images/nina.webp" />
+    <meta
+      property="og:description"
+      content="Photographe professionnelle disponible sur Bordeaux pour vos shooting photo, retouches et album photos." />
   </head>
   <body>
     <header class="top-header">
-      <h1 class="name">Nina Carducci - Photographe Professionnelle Bordeaux</h1>
+      <h1 class="name">Nina Carducci</h1>
       <div class="nav">
         <ul>
           <li><a href="#about">À propos</a></li>
@@ -67,8 +94,14 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
-              loading="lazy"
               src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp"
+              srcset="
+                ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-300.webp   300w,
+                ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1140.webp 1140w,
+                ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1580.webp 1580w,
+                ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp      1730w
+              "
+              sizes="(max-width: 1920px) 100vw, 1920px"
               class="d-block w-100"
               alt="Photo de Ryoji Iwata" />
           </div>
@@ -110,7 +143,12 @@
         <img
           loading="lazy"
           alt="Photo de Nina Carducci"
-          src="./assets/images/nina.webp" />
+          src="./assets/images/nina.webp"
+          srcset="
+            ./assets/images/nina-300.webp 300w,
+            ./assets/images/nina.webp     500w
+          "
+          sizes="(min-width: 2020px) 560px, (min-width: 1200px) calc(30vw - 40px), (min-width: 660px) calc(46.15vw - 75px), calc(80vw - 51px)" />
       </div>
       <div id="about-me">
         <h2 class="about-me__title">A propos de moi</h2>
@@ -140,19 +178,19 @@
             alt="Photo du concert d'Aaron Paul"
             data-gallery-tag="Concert"
             class="gallery-item"
-            src="./assets/images/gallery/concerts/aaron-paul-wnx-fxzb6cw-unsplash.webp" />
+            src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp" />
           <img
             loading="lazy"
             alt="Photo d'Ali Morshedlou"
             data-gallery-tag="Entreprises"
             class="gallery-item"
-            src="./assets/images/gallery/entreprise/ali-morshedlou-wmd64tmfc4k-unsplash.webp" />
+            src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp" />
           <img
             loading="lazy"
             alt="Photo de Jason Goodman"
             data-gallery-tag="Entreprises"
             class="gallery-item"
-            src="./assets/images/gallery/entreprise/jason-goodman-tho1-oukbg0-unsplash.webp" />
+            src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp" />
           <img
             loading="lazy"
             alt="Mariage d'Hannah Busing"
@@ -176,19 +214,19 @@
             alt="Portrait de Nino Van Prattenburg"
             data-gallery-tag="Portrait"
             class="gallery-item"
-            src="./assets/images/gallery/portraits/nino-van-prattenburg-443cl1uR_8-unsplash.webp" />
+            src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp" />
           <img
             loading="lazy"
             alt="Photo du concert d'Austin Neill"
             data-gallery-tag="Concert"
             class="gallery-item"
-            src="./assets/images/gallery/concerts/austin-neill-hgo1wfpxl3i-unsplash.webp" />
+            src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp" />
           <img
             loading="lazy"
             alt="Photo de Mateus Campos Felipe"
             data-gallery-tag="Entreprises"
             class="gallery-item"
-            src="./assets/images/gallery/entreprise/mateus-campos-felipe-fsgzm8n0hiy-unsplash.webp" />
+            src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" />
         </div>
       </div>
       <div class="quote">
@@ -224,7 +262,7 @@
         </div>
         <div class="service">
           <div class="service__description">
-            <span>Retouches</span>
+            <h3>Retouches</h3>
             <p>
               Vous souhaitez retoucher vos photos pour un résultat professionnel
               ? Bénéficier d’un rendu optimal pour vos publications
@@ -237,7 +275,7 @@
         </div>
         <div class="service">
           <div class="service__description">
-            <span>Album photos</span>
+            <h3>Album photos</h3>
             <p>
               Partagez avec vos proches et vos clients les photos des moments
               partagés ensemble à travers un album photo personnalisé
@@ -292,9 +330,10 @@
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"></script>
-    <script src="./assets/bootstrap/bootstrap.bundle.js"></script>
-    <script src="./assets/maugallery.js"></script>
-    <script src="./assets/scripts.js"></script>
+      crossorigin="anonymous"
+      defer></script>
+    <script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
+    <script src="./assets/maugallery.min.js" defer></script>
+    <script src="./assets/scripts.min.js" defer></script>
   </body>
 </html>
