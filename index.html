@@ -10,9 +10,9 @@
       href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
       rel="stylesheet" />
     <meta charset="UTF-8" />
-    <!--Ajout balise title-->
+    <!--Balise title-->
     <title>Nina Carducci - Photographe Professionnelle Bordeaux</title>
-    <!--Ajout metadescription-->
+    <!-- Metadescription-->
     <meta
       name="description"
       content="Nina Carducci, photographe professionnelle disponible sur Bordeaux pour vos shooting photo, retouches et album photos." />
@@ -47,7 +47,7 @@
   </head>
   <body>
     <header class="top-header">
-      <h1 class="name">Nina Carducci</h1>
+      <h1 class="name">Nina Carducci - Photographe Bordeaux</h1>
       <div class="nav">
         <ul>
           <li><a href="#about">À propos</a></li>
@@ -109,6 +109,13 @@
             <img
               loading="lazy"
               src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp"
+              srcset="
+                ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-300.webp    300w,
+                ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-1140.webp  1140w,
+                ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-1580w.webp 1580w,
+                ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp       1920w
+              "
+              sizes="(max-width: 1680px) 100vw, 1920px"
               class="d-block w-100"
               alt="Photo de Nicholas Green" />
           </div>
@@ -116,6 +123,13 @@
             <img
               loading="lazy"
               src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp"
+              srcset="
+                ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-300.webp   300w,
+                ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-1140.webp 1140w,
+                ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-1580.webp 1580w,
+                ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp      1920w
+              "
+              sizes="(max-width: 1680px) 100vw, 1920px"
               class="d-block w-100"
               alt="Photo d'Edward Cisneros" />
           </div>
@@ -332,7 +346,7 @@
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
       defer></script>
-    <script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
+    <script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
     <script src="./assets/maugallery.min.js" defer></script>
     <script src="./assets/scripts.min.js" defer></script>
     <script type="application/ld+json">
