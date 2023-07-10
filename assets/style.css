@@ -97,6 +97,8 @@ header .name {
 }
 .picture img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 #about-me,
 .form-container {
