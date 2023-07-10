@@ -59,6 +59,11 @@ header {
   padding-block: 30px;
   align-items: center;
 }
+a,
+button,
+li {
+  cursor: pointer;
+}
 header .name {
   font-size: 26px;
   text-align: center;
