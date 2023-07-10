@@ -115,6 +115,7 @@ header .name {
 }
 #about-me p:first-of-type {
   font-size: 16px;
+  width: 60%;
 }
 #about-me p {
   width: 80%;
@@ -252,7 +253,9 @@ input[type="submit"] {
     margin-top: 0;
     margin-bottom: 1em;
   }
-  #about-me h6,
+  #about-me p:first-of-type {
+    width: 100%;
+  }
   #about-me p {
     width: 100%;
   }
