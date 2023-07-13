@@ -272,9 +272,8 @@
         }
       });
 
-      // Remove / add the correct class ("active") for styling
-      // removeClass on the correct target ("nav-link")
-      $(".nav-link").removeClass("active");
+      $(".active").removeClass("active ");
+      // Class "active" was not added for styling
       $(this).addClass("active");
     },
   };
