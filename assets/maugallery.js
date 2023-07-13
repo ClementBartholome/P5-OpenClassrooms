@@ -160,7 +160,7 @@
         }
       });
       next =
-        // Correctly update the index
+        // Correctly update the index of the current image
         imagesCollection[index - 1] ||
         imagesCollection[imagesCollection.length - 1];
       $(".lightboxImage").attr("src", $(next).attr("src"));
@@ -195,7 +195,7 @@
           index = i;
         }
       });
-      // Correctly update the index
+      // Correctly update the index of the current image
       next = imagesCollection[index + 1] || imagesCollection[0];
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
@@ -259,7 +259,7 @@
     },
 
     filterByTag() {
-      if ($(this).hasClass("active")) {
+      if ($(this).hasClass("active-tag")) {
         return;
       }
 
@@ -272,9 +272,9 @@
         }
       });
 
-      $(".active").removeClass("active ");
+      $(".active-tag").removeClass("active active-tag");
       // Class "active" was not added for styling
-      $(this).addClass("active");
+      $(this).addClass("active active-tag");
     },
   };
 })(jQuery);
