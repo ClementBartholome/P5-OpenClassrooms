@@ -160,7 +160,7 @@
         }
       });
       next =
-        // Correctly update the index of the current image
+        // Correctly update the next variable to get the previous image
         imagesCollection[index - 1] ||
         imagesCollection[imagesCollection.length - 1];
       $(".lightboxImage").attr("src", $(next).attr("src"));
@@ -195,7 +195,7 @@
           index = i;
         }
       });
-      // Correctly update the index of the current image
+      // Correctly update the next variable to get the next image
       next = imagesCollection[index + 1] || imagesCollection[0];
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
